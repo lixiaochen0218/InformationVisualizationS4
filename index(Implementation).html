@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="jquery-3.2.1.min.js"></script>
+<style>
+
+body  {
+    background-image: url("background0.png");
+    
+}
+
+
+div {
+	margin:0px;
+	//background-color:yellow;
+}
+#zhanwei {
+	width: 200px;
+    height: 122px;
+}
+.sections {
+	width: 200px;
+    height: 64px;
+}
+#s1 {
+	position: absolute;
+    left: 320px;
+    top: 166px;
+	width: 250px;
+    height: 250px;
+}
+#sf1 {
+	position: absolute;
+    left: 320px;
+    top: 70px;
+	width: 250px;
+    height: 70px;
+}
+#sf2 {
+	position: absolute;
+    left: 590px;
+    top: 90px;
+	width: 80px;
+    height: 280px;
+}
+#sf5 {
+	position: absolute;
+    left: 230px;
+    top: 90px;
+	width: 80px;
+    height: 280px;
+}
+#sf3 {
+	position: absolute;
+    left: 445px;
+    top: 420px;
+	width: 180px;
+    height: 90px;
+}
+#sf4 {
+	position: absolute;
+    left: 265px;
+    top: 420px;
+	width: 180px;
+    height: 90px;
+}
+
+
+#s2 {
+	position: absolute;
+    left: 800px;
+    top: 190px;
+	width: 200px;
+    height: 200px;
+}
+#sr1 {
+	position: absolute;
+    left: 1005px;
+    top: 110px;
+	width: 100px;
+    height: 330px;
+}
+#sr2 {
+	position: absolute;
+    left: 690px;
+    top: 90px;
+	width: 150px;
+    height: 200px;
+	//z-index: -1;
+}
+#sr3 {
+	position: absolute;
+    left: 690px;
+    top: 300px;
+	width: 150px;
+    height: 200px;
+	//z-index: -1;
+}
+
+#s3 {
+	position: absolute;
+    left: 1230px;
+    top: 200px;
+	width: 180px;
+    height: 180px;
+}
+#st1 {
+	position: absolute;
+    left: 1220px;
+    top: 100px;
+	width: 200px;
+    height: 85px;
+}
+#st2 {
+	position: absolute;
+    left: 1420px;
+    top: 140px;
+	width: 80px;
+    height: 230px;
+}
+#st5 {
+	position: absolute;
+    left: 1130px;
+    top: 140px;
+	width: 80px;
+    height: 230px;
+}
+#st3 {
+	position: absolute;
+    left: 1315px;
+    top: 385px;
+	width: 150px;
+    height: 90px;
+}
+#st4 {
+	position: absolute;
+    left: 1165px;
+    top: 385px;
+	width: 150px;
+    height: 90px;
+}
+
+.circle {
+	position: absolute;
+	width: 120px;
+    height: 120px;
+}
+
+#c1 {
+    left: 240px;
+    top: 575px;
+}
+
+#c2 {
+    left: 400px;
+    top: 575px;
+}
+#c3 {
+    left: 550px;
+    top: 575px;
+}
+#c4 {
+    left: 730px;
+    top: 575px;
+}
+#c5 {
+    left: 885px;
+    top: 575px;
+}
+#c6 {
+    left: 1020px;
+    top: 575px;
+}
+#c7 {
+    left: 1180px;
+    top: 575px;
+}
+#c8 {
+    left: 1310px;
+    top: 575px;
+}
+
+</style>
+</head>
+<body>
+<div id="zhanwei">...</div>
+<div name="0" class="sections"></div>
+<div name="1" class="sections"></div>
+<div name="2" class="sections"></div>
+<div name="3" class="sections"></div>
+<div name="4" class="sections"></div>
+
+<div class="s1" id="s1" name="0"></div>
+<div class="s1" id="sf1" name="1"></div>
+<div class="s1" id="sf2" name="2"></div>
+<div class="s1" id="sf3" name="3"></div>
+<div class="s1" id="sf4" name="4"></div>
+<div class="s1" id="sf5" name="5"></div>
+
+<div class="s2" id="s2" name="0"></div>
+<div class="s2" id="sr1" name="1"></div>
+<div class="s2" id="sr2" name="2"></div>
+<div class="s2" id="sr3" name="3"></div>
+
+<div class="s3" id="s3" name="0"></div>
+<div class="s3" id="st1" name="1"></div>
+<div class="s3" id="st2" name="2"></div>
+<div class="s3" id="st3" name="3"></div>
+<div class="s3" id="st4" name="4"></div>
+<div class="s3" id="st5" name="5"></div>
+
+<div id="c1" class="circle" name="1"></div>
+<div id="c2" class="circle" name="2"></div>
+<div id="c3" class="circle" name="3"></div>
+<div id="c4" class="circle" name="4"></div>
+<div id="c5" class="circle" name="5"></div>
+<div id="c6" class="circle" name="6"></div>
+<div id="c7" class="circle" name="7"></div>
+<div id="c8" class="circle" name="8"></div>
+
+</body>
+<script>
+var num = 0;
+var circle1=["https://www.instagram.com/?hl=en","http://www.waikato.ac.nz/","http://www.nzherald.co.nz/"]
+var circle2=["https://www.snapchat.com/","https://www.reddit.com/","https://www.stuff.co.nz/"]
+var circle3=["https://www.skype.com/en/","https://www.skype.com/en/","https://www.spark.co.nz/"]
+var circle4=["http://weibo.com/","http://www.waikato.ac.nz/","https://www.vodafone.co.nz/"]
+var circle5=["https://mail.google.com/mail/u/0/#inbox","https://mail.google.com/mail/u/0/#inbox","http://www.nzherald.co.nz/"]
+var circle6=["https://www.messenger.com/","https://www.messenger.com/",""]
+var circle7=["https://www.skype.com/en/","http://www.waikato.ac.nz/","https://www.stuff.co.nz/"]
+var circle8=["http://www.msn.com/en-nz","","http://www.msn.com/en-nz"]
+
+var section1=["https://www.facebook.com/","http://www.waikato.ac.nz/","https://www.trademe.co.nz/"]
+var sectionf1=["https://www.facebook.com/xiaochen.li.758","https://elearn.waikato.ac.nz/","https://www.trademe.co.nz/Community/"]
+var sectionf2=["https://www.facebook.com/WaikatoInternational/","http://www.waikato.ac.nz/library/","https://www.trademe.co.nz/browse"]
+var sectionf3=["https://www.facebook.com/groups/1342826822441493/","https://www.waikato.ac.nz/landing/student.shtml","https://www.trademe.co.nz/marketplace"]
+var sectionf4=["https://www.facebook.com/WaikatoStudentsUnion/","http://www.waikato.ac.nz/","https://www.trademe.co.nz/jobs"]
+var sectionf5=["https://www.facebook.com/groups/1810569399232871/","http://www.waikato.ac.nz/study/international","https://www.trademe.co.nz/motors"]
+
+var section2=["https://www.reddit.com/","https://mail.google.com/mail/u/0/#inbox","https://www.anz.co.nz/personal/"]
+var sectionr1=["https://www.reddit.com/controversial/","https://mail.google.com/mail/u/0/#inbox","https://digital.anz.co.nz/preauth/web/service/login"]
+var sectionr3=["https://www.reddit.com/new/","https://mail.google.com/mail/u/0/#inbox","https://www.anz.co.nz/business/"]
+var sectionr2=["https://www.reddit.com/rising/","https://docs.google.com/","https://www.anz.co.nz/institutional/"]
+
+var section3=["https://twitter.com/","","http://www.nzherald.co.nz/"]
+var sectiont1=["https://twitter.com/ArianaGrande","","http://www.nzherald.co.nz/nzh/regional-news/"]
+var sectiont2=["https://twitter.com/taylorswift13","","http://www.nzherald.co.nz/sport/news/headlines.cfm?c_id=4"]
+var sectiont3=["https://twitter.com/jtimberlake","","http://www.nzherald.co.nz/entertainment/news/headlines.cfm?c_id=1501119"]
+var sectiont4=["https://twitter.com/beyonce","","http://www.nzherald.co.nz/business/news/headlines.cfm?c_id=3"]
+var sectiont5=["https://twitter.com/waikato","","http://www.nzherald.co.nz/technology/news/headlines.cfm?c_id=5"]
+//panel section
+$('.sections' ).click(function( event ) {
+  console.log( 'section');
+  num = $(this).attr( "name" );
+  num = parseInt(num)
+  console.log(num);
+  $('body').css( "background-image", "url('background"+num+".png')" );
+  if(num==3||num==4){
+		num=2;
+		
+  }
+});
+//first section
+$('.s1' ).click(function( event ) {
+  console.log( 's1');
+  var link;
+  var name = $(this).attr( "name" );
+	if(name=='1'||name=='2'||name=='0'){
+				if(name=='0'){
+					link=section1[num];
+					console.log(num);
+					console.log( link);
+				}else if (name=='1'){
+					link=sectionf1[num];
+				}else{
+					link=sectionf2[num];
+				}
+		}else{
+				if(name=='3'){
+					link=sectionf3[num];
+				}else if (name=='4'){
+					link=sectionf4[num];
+				}else{
+					link=sectionf5[num];
+				}
+		}
+	if(link==""){return;}
+	window.open(link, '_blank');
+});
+//Second section
+$('.s2' ).click(function( event ) {
+  console.log( 's2');
+  var link;
+  var name = $(this).attr( "name" );
+	if(name=='1'||name=='0'){
+				if(name=='0'){
+					link=section2[num];
+				}else{
+					link=sectionr1[num];
+				}
+	}else{
+			if(name=='2'){
+				link=sectionr2[num];
+			}else{
+				link=sectionr3[num];
+			}
+	}
+	if(link==""){return;}
+	window.open(link, '_blank');
+});
+//Third section
+$('.s3' ).click(function( event ) {
+  console.log( 's3');
+  var link;
+  var name = $(this).attr( "name" );
+	if(name=='1'||name=='2'||name=='0'){
+				if(name=='0'){
+					link=section3[num];
+				}else if (name=='1'){
+					link=sectiont1[num];
+				}else{
+					link=sectiont2[num];
+				}
+		}else{
+				if(name=='3'){
+					link=sectiont3[num];
+				}else if (name=='4'){
+					link=sectiont4[num];
+				}else{
+					link=sectiont5[num];
+				}
+		}
+	if(link==""){return;}
+	window.open(link, '_blank');
+});
+//circles
+$('.circle' ).click(function( event ) {
+  console.log( 'circle');
+  console.log(this);
+  var link;
+  var name = $(this).attr( "name" );
+  if(name=='1'||name=='2'||name=='3'||name=='4'){
+		if(name=='1'||name=='2'){
+				if(name=='1'){
+					link=circle1[num];
+				}else{
+					link=circle2[num];
+				}
+		}else{
+				if(name=='3'){
+					link=circle3[num];
+				}else{
+					link=circle4[num];
+				}
+		}
+  }else{
+		if(name=='5'||name=='6'){
+				if(name=='5'){
+					link=circle5[num];
+				}else{
+					link=circle6[num];
+				}
+		}else{
+				if(name=='7'){
+					link=circle7[num];
+				}else{
+					link=circle8[num];
+				}
+		}
+  }
+  if(link==""){return;}
+  window.open(link, '_blank');
+});
+
+
+</script>
+</html>
